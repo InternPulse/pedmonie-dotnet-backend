@@ -1,0 +1,12 @@
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\bin\Debug\net8.0\Pedmonie.Model.deps.json
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\bin\Debug\net8.0\Pedmonie.Model.dll
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\bin\Debug\net8.0\Pedmonie.Model.pdb
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\Pedmonie.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\Pedmonie.Model.AssemblyInfoInputs.cache
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\Pedmonie.Model.AssemblyInfo.cs
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\Pedmonie.Model.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\Pedmonie.Model.sourcelink.json
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\Pedmonie.Model.dll
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\refint\Pedmonie.Model.dll
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\Pedmonie.Model.pdb
+C:\Users\Abdul\source\repos\AAAAA\pedmonie-dotnet-backend\Pedmonie\Pedmonie.Model\obj\Debug\net8.0\ref\Pedmonie.Model.dll
