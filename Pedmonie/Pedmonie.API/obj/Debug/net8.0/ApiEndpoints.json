@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "Pedmonie.API.Controllers.Wallet_TransactionController",
+    "Method": "GetTransactionsByIdAsync",
+    "RelativePath": "Wallet_Transaction/transactionId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pedmonie.API.Controllers.Wallet_TransactionController",
+    "Method": "GetAllTransactionsAsync",
+    "RelativePath": "Wallet_Transaction/transactions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pedmonie.API.Controllers.Wallet_TransactionController",
+    "Method": "GetWalletById",
+    "RelativePath": "Wallet_Transaction/walletId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "walletId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
