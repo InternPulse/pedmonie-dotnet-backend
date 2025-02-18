@@ -22,16 +22,16 @@ public class TransactionService : ITransactionService
     /// </summary>
     /// <param name="transactionId"></param>
     /// <returns></returns>
-    public async Task<BaseResponse<Transaction>> GetTransactionsByIdAsync(int transactionId)
+    public async Task<BaseResponse<Transaction>> GetTransactionsByIdAsync(string transactionId)
     {
-        var transactions = await applicationDbContext.Transactions.FindAsync(transactionId);
+        var transactions = await applicationDbContext.TTransaction.FindAsync(transactionId);
         if (transactions != null)
         {
             return new BaseResponse<Transaction>
             {
                 IsSuccess = true,
                 Message = "Transaction retrieved successfully",
-                Data = transactions
+                Data = default
             };
         }
         return new BaseResponse<Transaction>
@@ -48,7 +48,7 @@ public class TransactionService : ITransactionService
     /// <returns></returns>
     public async Task<BaseResponse<List<Transaction>>> GetAllTransactionsAsync()
     {
-        var transactions = await applicationDbContext.Transactions.ToListAsync();
+        var transactions = await applicationDbContext.TTransaction.ToListAsync();
         if (transactions != null)
         {
             return new BaseResponse<List<Transaction>>

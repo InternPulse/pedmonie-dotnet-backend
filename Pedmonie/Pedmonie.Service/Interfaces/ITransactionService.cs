@@ -8,6 +8,6 @@ using Pedmonie.Model.Entity;
 namespace Pedmonie.Service.Interfaces;
 public interface ITransactionService
 {
-    Task<BaseResponse<Transaction>> GetTransactionsByIdAsync(int transactionId);
+    Task<BaseResponse<Transaction>> GetTransactionsByIdAsync(string transactionId);
     Task<BaseResponse<List<Transaction>>> GetAllTransactionsAsync();
 }

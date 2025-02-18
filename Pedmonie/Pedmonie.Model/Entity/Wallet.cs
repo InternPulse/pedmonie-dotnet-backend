@@ -7,18 +7,23 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Pedmonie.Model.Entity;
+[Table("Wallets")]
 public class Wallet
 {
     [Key]
-    public int WalletId { get; set; } // UUID primary key
+    [Column("wallet_id")]
+    public Guid WalletId { get; set; } // UUID primary key
 
     [Required]
-    public int MerchantId { get; set; } // UUID foreign key
+    [Column("merchant_id")]
+    public Guid MerchantId { get; set; } // UUID foreign key
 
-    [Column(TypeName = "decimal(18, 2)")]
+    [Column(name: "amount", TypeName = "decimal(18, 2)")]
     public decimal Amount { get; set; } = 0.00M; // Default: 0.00
 
+    [Column("createdAt")]
     public DateTime CreatedAt { get; set; }
+    [Column("updatedAt")]
     public DateTime UpdatedAt { get; set; }
 }
 

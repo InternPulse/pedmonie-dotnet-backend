@@ -8,5 +8,5 @@ using Pedmonie.Model.Entity;
 namespace Pedmonie.Service.Interfaces;
 public interface IWalletService
 {
-    Task<BaseResponse<Wallet>> GetWalletByIdAsync(int walletId);
+    Task<BaseResponse<Wallet>> GetWalletByIdAsync(Guid walletId);
 }

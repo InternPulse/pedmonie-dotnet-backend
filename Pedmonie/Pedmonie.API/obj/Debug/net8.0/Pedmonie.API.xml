@@ -4,21 +4,21 @@
         <name>Pedmonie.API</name>
     </assembly>
     <members>
-        <member name="M:Pedmonie.API.Controllers.Wallet_TransactionController.GetWalletById(System.Int32)">
+        <member name="M:Pedmonie.API.Controllers.WalletTransactionController.GetWalletById(System.Guid)">
             <summary>
             "This method Get wallet by walletId"
             </summary>
             <param name="walletId"></param>
             <returns></returns>
         </member>
-        <member name="M:Pedmonie.API.Controllers.Wallet_TransactionController.GetTransactionsByIdAsync(System.Int32)">
+        <member name="M:Pedmonie.API.Controllers.WalletTransactionController.GetTransactionsByIdAsync(System.String)">
             <summary>
             "This method Get transaction by transactionId"
             </summary>
             <param name="transactionId"></param>
             <returns></returns>
         </member>
-        <member name="M:Pedmonie.API.Controllers.Wallet_TransactionController.GetAllTransactionsAsync">
+        <member name="M:Pedmonie.API.Controllers.WalletTransactionController.GetAllTransactionsAsync">
             <summary>
             "This method gets all transactions"
             </summary>

@@ -8,6 +8,6 @@ namespace Pedmonie.Model.Enum;
 public enum Status
 {
     Pending = 1,
-    Successfull,
+    Successful,
     Failed
 }

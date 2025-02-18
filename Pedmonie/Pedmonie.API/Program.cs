@@ -18,8 +18,10 @@ public class Program
         // configure MYSQL database
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+        // Register ApplicationDbContext with DI
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySQL(connectionString));
+            options.UseMySQL(connectionString)
+        );
         // Add services to the container.
         builder.Services.AddControllers();
         builder.Services.AddScoped<IWalletService, WalletService>();
