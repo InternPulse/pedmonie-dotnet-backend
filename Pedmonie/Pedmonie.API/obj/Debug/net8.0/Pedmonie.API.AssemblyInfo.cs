@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pedmonie.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5769f85d66c9a085f6bb94c7ab1e3fc75a9ddd1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b64eb3787f064300298894c2e5f87629b3028bb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pedmonie.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pedmonie.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
