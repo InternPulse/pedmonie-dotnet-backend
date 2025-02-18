@@ -7,6 +7,12 @@ WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
 
+# Set environment variables for DB connection (optional, can be overridden at runtime)
+ENV DB_SERVER=${DB_SERVER}
+ENV DB_PORT=${DB_PORT}
+ENV DB_NAME=${DB_NAME}
+ENV DB_USER=${DB_USER}
+ENV DB_PASSWORD=${DB_PASSWORD}
 
 # This stage is used to build the service project
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
