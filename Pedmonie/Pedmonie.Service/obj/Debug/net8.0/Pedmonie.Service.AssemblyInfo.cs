@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pedmonie.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f7f8e7bbcc21b25f960ce2c0621651db7d334ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebb4bc3db6c8b7d1072aa2cced351c0f3add95e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pedmonie.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pedmonie.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
