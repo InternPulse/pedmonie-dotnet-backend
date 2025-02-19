@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Pedmonie.Model.Entity;
 using Pedmonie.Service.Interfaces;
 
@@ -9,11 +10,13 @@ public class WalletTransactionController : ControllerBase
 {
     private readonly IWalletService _walletService;
     private readonly ITransactionService _transaction;
+    private readonly Logging _connectionStrings;
 
-    public WalletTransactionController(IWalletService walletService, ITransactionService transaction)
+    public WalletTransactionController(IWalletService walletService, ITransactionService transaction, IOptions<Logging> connectionStrings)
     {
         _walletService = walletService;
         _transaction = transaction;
+        _connectionStrings = connectionStrings.Value;
     }
 
     /// <summary>
@@ -34,6 +37,19 @@ public class WalletTransactionController : ControllerBase
 
         return NotFound(new { message = "Wallet not found" });
     }
+
+    //[HttpGet("get-database-url")]
+    //public IActionResult GetDatabaseUrl()
+    //{
+    //    var databaseUrl = _configuration.GetValue<string>("DefaultConnections");
+    //    if (string.IsNullOrEmpty(databaseUrl))
+    //    {
+    //        return NotFound("Environment variable 'DATABASE_URL' not set.");
+    //    }
+
+    //    return Ok(new { DatabaseUrl = databaseUrl });
+    //}
+
     /// <summary>
     /// "This method Get transaction by transactionId"
     /// </summary>

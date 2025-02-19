@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Pedmonie.Migrationn;
 using Pedmonie.Service.Interfaces;
 using Pedmonie.Service.Services;
+using static Org.BouncyCastle.Math.EC.ECCurve;
 
 namespace Pedmonie.API;
 
@@ -12,12 +13,10 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
-
-
         // configure MYSQL database
-        var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
+        //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+        builder.Services.AddOptions<Logging>().BindConfiguration(nameof(Logging));
+        var connectionString = builder.Configuration["DefaultConnections"];
         // Register ApplicationDbContext with DI
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseMySQL(connectionString)
