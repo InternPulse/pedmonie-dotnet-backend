@@ -10,13 +10,13 @@ public class WalletTransactionController : ControllerBase
 {
     private readonly IWalletService _walletService;
     private readonly ITransactionService _transaction;
-    private readonly Logging _connectionStrings;
+    //private readonly Logging _connectionStrings;
 
-    public WalletTransactionController(IWalletService walletService, ITransactionService transaction, IOptions<Logging> connectionStrings)
+    public WalletTransactionController(IWalletService walletService, ITransactionService transaction)
     {
         _walletService = walletService;
         _transaction = transaction;
-        _connectionStrings = connectionStrings.Value;
+        //_connectionStrings = connectionStrings.Value;
     }
 
     /// <summary>
