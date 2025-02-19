@@ -4,8 +4,8 @@ using Pedmonie.Model.Entity;
 using Pedmonie.Service.Interfaces;
 
 namespace Pedmonie.API.Controllers;
+[Route("api/v1/[controller]")]
 [ApiController]
-[Route("[controller]")]
 public class WalletTransactionController : ControllerBase
 {
     private readonly IWalletService _walletService;
