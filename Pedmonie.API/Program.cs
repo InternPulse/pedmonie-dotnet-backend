@@ -15,8 +15,10 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
         // configure MYSQL database
         //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-        builder.Services.AddOptions<Logging>().BindConfiguration(nameof(Logging));
+        // builder.Services.AddOptions<Logging>().BindConfiguration(nameof(Logging));
+        Console.WriteLine("welcome");
         var connectionString = builder.Configuration["DefaultConnections"];
+        Console.WriteLine(connectionString);
         // Register ApplicationDbContext with DI
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseMySQL(connectionString)
