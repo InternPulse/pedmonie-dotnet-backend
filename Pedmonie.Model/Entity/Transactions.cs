@@ -71,7 +71,7 @@ public class Transaction
     #endregion
 }*/
 
-[Table("Transactions")]
+[Table("transactions")]
 public class Transaction
 {
     // Auto-incremented primary key (optional in the model)
