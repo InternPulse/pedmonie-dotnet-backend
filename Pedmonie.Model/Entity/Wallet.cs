@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Pedmonie.Model.Entity;
-[Table("Wallets")]
+[Table("wallets")]
 public class Wallet
 {
     [Key]
