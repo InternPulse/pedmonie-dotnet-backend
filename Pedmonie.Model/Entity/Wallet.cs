@@ -12,7 +12,7 @@ public class Wallet
 {
     [Key]
     [Column("wallet_id")]
-    public string WalletId { get; set; } // UUID primary key
+    public Guid WalletId { get; set; } // UUID primary key
 
     [Required]
     [Column("merchant_id")]
