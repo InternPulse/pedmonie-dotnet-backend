@@ -21,7 +21,7 @@ public class WalletService : IWalletService
     /// </summary>
     /// <param name="walletId"></param>
     /// <returns></returns>
-    public async Task<BaseResponse<Wallet>> GetWalletByIdAsync(string walletId)
+    public async Task<BaseResponse<Wallet>> GetWalletByIdAsync(Guid walletId)
     {
         var wallet = await applicationDbContext.Wallets.FindAsync(walletId);
         if (wallet != null)
