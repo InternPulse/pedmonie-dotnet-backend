@@ -83,7 +83,6 @@ public class Transaction
     [Required]
     [Column("transaction_id")]
     [StringLength(32)]
-    [FixedLength]
     public string TransactionId { get; set; }
 
     // Order ID represented as a UUID Guid (char(36))
