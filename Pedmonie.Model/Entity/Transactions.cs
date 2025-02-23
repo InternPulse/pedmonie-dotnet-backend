@@ -83,7 +83,7 @@ public class Transaction
     [Required]
     [Column("transaction_id")]
     [StringLength(32)]
-    public string TransactionId { get; set; }
+    public Guid TransactionId { get; set; }
 
     // Order ID represented as a UUID Guid (char(36))
     [Required]
