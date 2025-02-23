@@ -82,7 +82,9 @@ public class Transaction
     // Unique transaction ID, which is a UUID represented as a string (char(36))
     [Required]
     [Column("transaction_id")]
-    public Guid TransactionId { get; set; }
+    [StringLength(32)]
+    [FixedLength]
+    public string TransactionId { get; set; }
 
     // Order ID represented as a UUID Guid (char(36))
     [Required]
