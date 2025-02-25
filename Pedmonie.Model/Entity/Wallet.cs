@@ -11,8 +11,8 @@ namespace Pedmonie.Model.Entity;
 public class Wallet
 {
     [Key]
-    [Column("wallet_id")]
-    public Guid WalletId { get; set; } // UUID primary key
+    [Column("wallet_id", TypeName = "char(32)")]
+    public string WalletId { get; set; } // UUID primary key
 
     [Required]
     [Column("merchant_id")]
