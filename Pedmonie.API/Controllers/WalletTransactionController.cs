@@ -26,7 +26,7 @@ public class WalletTransactionController : ControllerBase
     /// <returns></returns>
 
     [HttpGet("walletId")]
-    public async Task<IActionResult> GetWalletById(string walletId)
+    public async Task<IActionResult> GetWalletById(Guid walletId)
     {
         var wallet = await _walletService.GetWalletByIdAsync(walletId);
         if (wallet != null)
