@@ -23,7 +23,7 @@ public class ApplicationDbContext : DbContext
     }
 
     // Define your DbSets here
-    public DbSet<Transaction> TTransaction { get; set; }
+   // public DbSet<Transaction> TTransaction { get; set; }
     public DbSet<Wallet> Wallets { get; set; }
     public DbSet<Transaction> Transactions { get; set; }
 
