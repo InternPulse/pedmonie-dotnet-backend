@@ -24,7 +24,7 @@ public class TransactionService : ITransactionService
     /// <returns></returns>
     public async Task<BaseResponse<Transaction>> GetTransactionsByIdAsync(Guid transactionId)
     {
-        var transactions = await applicationDbContext.TTransaction
+        var transactions = await applicationDbContext.Transactions
             .FirstOrDefaultAsync(x => x.TransactionId == transactionId);
         if (transactions != null)
         {
@@ -49,7 +49,7 @@ public class TransactionService : ITransactionService
     /// <returns></returns>
     public async Task<BaseResponse<List<Transaction>>> GetAllTransactionsAsync()
     {
-        var transactions = await applicationDbContext.TTransaction.ToListAsync();
+        var transactions = await applicationDbContext.Transactions.ToListAsync();
         if (transactions != null)
         {
             return new BaseResponse<List<Transaction>>
